@@ -11,7 +11,7 @@ public class RegexStringUtils {
 	/**
 	 * クラス定数群
 	 */
-	private static final String FORMAT_PHONE_NUMBER = "\\d{2,4}-\\d{2,4}-\\d{4}";
+	private static final String FORMAT_PHONE_NUMBER = "(\\d{2,4}-){2}\\d{4}";
 
 	/**
 	 * 文字列のパターンマッチングチェック
