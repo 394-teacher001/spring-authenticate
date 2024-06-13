@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>利用者情報入力</title>
+<link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+	<th:block th:replace="common/header"></th:block>
+	<main>
+		<article>
+			<h2>利用者情報入力</h2>
+			<!-- エラー表示部 -->
+			<th:block th:if="${user.errors.size() > 0}">
+				<ul class="error">
+					<li th:each="error:${user.errors}" th:text="${error}"></li>
+				</ul>
+			</th:block>
+			<!-- 入力フォーム部 -->
+			<th:block th:replace="user/entryForm"></th:block>
+		</article>
+	</main>
+	<th:block th:replace="common/footer"></th:block>
+</body>
+</html>

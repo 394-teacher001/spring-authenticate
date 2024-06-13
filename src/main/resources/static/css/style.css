@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	color: dimgray;
+	font-size: 1.4rem;
+}
+
+th, td {
+	padding: 0.2rem 0.8rem;
+	font-weight: normal;
+}
+
+input[type="date"] {
+	color: dimgray;
+}
+
+button {
+	color: dimgray;
+	margin: 1.5rem 0;
+}
+
+.error {
+	color: tomato;
+	font-size: 85%;
+	margin: 0.75rem 0;
+}
+
+.required::after {
+	content: "*";
+}
+
+caption {
+	caption-side: bottom;
+	margin: 0.75rem 0 0 0;
+	padding: 0 0.75rem;
+	text-align: left;
+}
+
+.u_small {
+	font-size: small;
+}
+
+.u_larger {
+	font-size: larger;
+}
+
+.u_bold {
+	font-weight: bold;
+}
+
+.u_underline {
+	text-decoration: underline;
+}

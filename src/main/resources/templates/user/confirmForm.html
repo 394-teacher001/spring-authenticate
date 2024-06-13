@@ -1,0 +1,40 @@
+<form>
+	<table border="1">
+		<tr>
+			<th class="required">利用者名</th>
+			<td th:text="${user.name}"></td>
+			<input type="hidden" name="name" th:value="${user.name}" />
+		</tr>
+		<tr>
+			<th>郵便番号</th>
+			<td th:text="${user.zipcode}"></td>
+			<input type="hidden" name="zipcode" th:value="${user.zipcode}" />
+		</tr>
+		<tr>
+			<th>住所</th>
+			<td th:text="${user.address}"></td>
+			<input type="hidden" name="address" th:value="${user.address}" />
+		</tr>
+		<tr>
+			<th class="required">電話番号</th>
+			<td th:text="${user.phone}"></td>
+			<input type="hidden" name="phone" th:value="${user.phone}" />
+		</tr>
+		<tr>
+			<th  class="required">メールアドレス</th>
+			<td th:text="${user.email}"></td>
+			<input type="hidden" name="email" th:value="${user.email}" />
+		</tr>
+		<tr>
+			<th  class="required">パスワード</th>
+			<td th:text="${user.password}"></td>
+			<input type="hidden" name="password" th:value="${user.password}" />
+		</tr>
+		<tr>
+			<th>生年月日</th>
+			<td th:text="${user.birthday}"></td>
+			<input type="hidden" name="birthday" th:value="${user.birthday}" />
+		</tr>
+	</table>
+	<button formaction="/user/entry" formmethod="post">登録</button>
+</form>

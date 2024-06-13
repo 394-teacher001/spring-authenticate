@@ -1,0 +1,7 @@
+<header>
+	<h1>サイトタイトル</h1>
+	<th:block th:if="${@login.name ne null}">
+		<span th:text="${@login.name} + 'さんがログイン中'"></span>
+		<a href="/logout">ログアウト</a>
+	</th:block>
+</header>

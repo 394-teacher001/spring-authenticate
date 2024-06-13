@@ -1,0 +1,48 @@
+<form>
+	<table border="1">
+		<caption class="u_small">*がついている項目は<span class="u_larger u_bold"> 必須 </span>です。</caption>
+		<tr>
+			<th class="required">利用者名</th>
+			<td>
+				<input type="text" name="name" th:value="${user.name}" />
+			</td>
+		</tr>				
+		<tr>
+			<th>郵便番号</th>
+			<td>
+				<input type="text" name="zipcode" th:value="${user.zipcode}" />
+			</td>
+		</tr>				
+		<tr>
+			<th>住所</th>
+			<td>
+				<input type="text" name="address" th:value="${user.address}" />
+			</td>
+		</tr>				
+		<tr>
+			<th class="required">電話番号</th>
+			<td>
+				<input type="text" name="phone" th:value="${user.phone}" />
+			</td>
+		</tr>
+		<tr>
+			<th class="required">メールアドレス</th>
+			<td>
+				<input type="text" name="email" th:value="${user.email}" />
+			</td>
+		</tr>
+		<tr>
+			<th class="required">パスワード</th>
+			<td>
+				<input type="text" name="password" />
+			</td>
+		</tr>				
+		<tr>
+			<th>生年月日</th>
+			<td>
+				<input type="date" name="birthday" th:value="${user.birthday}" />
+			</td>
+		</tr>
+	</table>
+	<button formaction="/user/confirm" formmethod="post">確認画面へ</button>
+</form>
